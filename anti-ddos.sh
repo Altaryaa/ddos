@@ -382,6 +382,19 @@ fi
 # Allow incoming DNS requests.
 "$IPTABLES" -A INPUT -m state --state NEW -p udp --dport 53 -j ACCEPT
 "$IPTABLES" -A INPUT -m state --state NEW -p tcp --dport 53 -j ACCEPT
+"$IPTABLES" -A INPUT -p tcp --dport 5559 -j ACCEPT
+"$IPTABLES" -A INPUT -p tcp --dport 452 -j ACCEPT
+"$IPTABLES" -A INPUT -p tcp --dport 844 -j ACCEPT
+"$IPTABLES" -A INPUT -p tcp --dport 22 -j ACCEPT
+"$IPTABLES" -A INPUT -p tcp --dport 50687 -j ACCEPT
+
+"$IPTABLES" -A INPUT -m state --state NEW -p tcp --dport 5559 -j ACCEPT
+"$IPTABLES" -A INPUT -m state --state NEW -p tcp --dport 452 -j ACCEPT
+"$IPTABLES" -A INPUT -m state --state NEW -p tcp --dport 844 -j ACCEPT
+"$IPTABLES" -A INPUT -m state --state NEW -p tcp --dport 22 -j ACCEPT
+"$IPTABLES" -A INPUT -m state --state NEW -p tcp --dport 50687 -j ACCEPT
+
+
 
 # Allow incoming HTTP requests.
 "$IPTABLES" -A INPUT -m state --state NEW -p tcp --dport 80 -j ACCEPT
