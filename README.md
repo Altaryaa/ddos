@@ -28,7 +28,7 @@ msys2
 ```
 ```sh
 git clone https://github.com/altaryaa/ddos
-cd ~/Anti-DDOS
+cd ~/ddos
 bash ./anti-ddos.sh
 ```
 ### RUN
