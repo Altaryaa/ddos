@@ -27,7 +27,7 @@ This requires MSYS2 (`winget install msys2`).
 msys2
 ```
 ```sh
-git clone https://github.com/anti-ddos/Anti-DDOS
+git clone https://github.com/altaryaa/ddos
 cd ~/Anti-DDOS
 bash ./anti-ddos.sh
 ```
